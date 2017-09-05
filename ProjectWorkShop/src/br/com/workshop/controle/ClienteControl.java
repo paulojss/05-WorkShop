@@ -69,6 +69,32 @@ public class ClienteControl {
 	public Cliente getCliente () {
 		return cliente;
 	}
-	
-	
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getCepString() {
+		return cepString;
+	}
+
+	public void setCepString(String cepString) {
+		this.cepString = cepString;
+	}
+
+	public boolean isAutenticado() {
+		return autenticado;
+	}
+
+	public void setAutenticado(boolean autenticado) {
+		this.autenticado = autenticado;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 }
