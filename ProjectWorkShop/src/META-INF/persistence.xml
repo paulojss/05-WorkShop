@@ -17,7 +17,7 @@
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
 			<property name="hibernate.connection.username" value="postgres" />
 			<property name="hibernate.connection.password" value="1234" />
-			<property name="hibernate.connection.url" value="jdbc:postgresql://127.0.0.1/jparel" />
+			<property name="hibernate.connection.url" value="jdbc:postgresql://127.0.0.1/workshop" />
 		</properties>
 	</persistence-unit>
 </persistence>

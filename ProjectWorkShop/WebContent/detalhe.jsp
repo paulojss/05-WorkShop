@@ -12,8 +12,6 @@
 <body>
 <f:view>
 	<h:form>
-	<div id="menu">
-	
 		<h:panelGrid columns="2">
 			<h:graphicImage value="figuras/#{pedidoControl.produto.foto}" styleClass="fotoMaior"></h:graphicImage>
 			<h:panelGrid>
@@ -25,7 +23,6 @@
 				<h:commandButton action="carrinho" actionListener="#{pedidoControl.comprar}" value="Comprar"></h:commandButton>
 			</h:panelGrid>
 		</h:panelGrid>
-	</div>
 	</h:form>
 </f:view>
 </body>

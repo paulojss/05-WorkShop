@@ -6,7 +6,7 @@
 <html>
 
 <head>
-<link href="mercado.css" rel="stylesheet" type="text/css"/>
+	<link href="mercado.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 	
 		<h:messages style="color:red;text-align: center;"></h:messages>
 		<h:panelGrid columns="2" rendered="#{!clienteControl.autenticado}">
-			<h:outputText value="Email:" styleClass="rotulos"></h:outputText>
+			<h:outputText value="Email:" ></h:outputText>
 			<h:inputText value="#{clienteControl.email}" styleClass="edit"></h:inputText>
 			<h:outputText value="Senha:" styleClass="rotulos"></h:outputText>
 			<h:inputSecret value="#{clienteControl.senha}" styleClass="edit"></h:inputSecret>

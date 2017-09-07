@@ -4,20 +4,23 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
 	version="1.2">
+	
 	<managed-bean>
 		<managed-bean-name>pedidoControl</managed-bean-name>
 		<managed-bean-class>
-			cursojava.workshop.controle.PedidoControl
+			br.com.workshop.controle.PedidoControl
 		</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	
 	<managed-bean>
 		<managed-bean-name>clienteControl</managed-bean-name>
 		<managed-bean-class>
-			cursojava.workshop.controle.ClienteControl
+			br.com.workshop.controle.ClienteControl
 		</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	
 	<navigation-rule>
 		<display-name>pesquisa</display-name>
 		<from-view-id>/pesquisa.jsp</from-view-id>
@@ -26,7 +29,6 @@
 			<to-view-id>/detalhe.jsp</to-view-id>
 		</navigation-case>
 	</navigation-rule>
-	
 	
 	<navigation-rule>
 		<display-name>detalhe</display-name>
@@ -46,7 +48,6 @@
 		</navigation-case>
 	</navigation-rule>
 	
-	
 	<navigation-rule>
 		<display-name>cliente</display-name>
 		<from-view-id>/cliente.jsp</from-view-id>
@@ -57,6 +58,7 @@
 			<to-view-id>/login.jsp</to-view-id>
 		</navigation-case>
 	</navigation-rule>
+	
 	<navigation-rule>
 		<display-name>carrinho</display-name>
 		<from-view-id>/carrinho.jsp</from-view-id>
@@ -65,4 +67,5 @@
 			<to-view-id>/login.jsp</to-view-id>
 		</navigation-case>
 	</navigation-rule>
+	
 </faces-config>

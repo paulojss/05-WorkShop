@@ -9,9 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="mercado.css" rel="stylesheet" type="text/css" />
-<title>Insert title here</title>
 </head>
-
 
 <body>
 <%@include file="menu.html"%>
@@ -20,7 +18,7 @@
 		<h:messages></h:messages>
 		<rich:dataTable value="#{pedidoControl.itens}" var="item" width="700px">
 			<f:facet name="header">
-				<h:outpuText value="Seu Carrinho de Compras"></h:outpuText>
+				<h:outputText value="Seu Carrinho de Compras"></h:outputText>
 			</f:facet>
 			<rich:column>
 				<f:facet name="header">

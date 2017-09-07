@@ -6,7 +6,7 @@
 <html>
 
 <head>
-<link href="mercado.css" rel="stylesheet" type="text/css"/>
+	<link href="mercado.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
