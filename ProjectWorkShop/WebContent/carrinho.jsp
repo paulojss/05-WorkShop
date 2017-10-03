@@ -69,8 +69,7 @@
 					<f:facet name="header">
 						<h:outputText value="Excluir"></h:outputText>
 					</f:facet>
-					<h:commandButton value="Excluir" 
-					actionListener=" #{pedidoControl.excluirProdutoCarrinho}">
+					<h:commandButton value="Excluir" actionListener="#{pedidoControl.excluirProdutoCarrinho}">
 					</h:commandButton>
 				</rich:column>
 	</rich:dataTable>

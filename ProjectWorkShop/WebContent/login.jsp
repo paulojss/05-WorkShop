@@ -13,14 +13,13 @@
 <%@include file="menu.html" %>
 <f:view>
 	<h:form>
-	<div id="geral">
 	
-		<h:messages style="color:red;text-align: center;"></h:messages>
+		<h:messages ></h:messages>
 		<h:panelGrid columns="2" rendered="#{!clienteControl.autenticado}">
 			<h:outputText value="Email:" ></h:outputText>
 			<h:inputText value="#{clienteControl.email}" styleClass="edit"></h:inputText>
-			<h:outputText value="Senha:" styleClass="rotulos"></h:outputText>
-			<h:inputSecret value="#{clienteControl.senha}" styleClass="edit"></h:inputSecret>
+			<h:outputText value="Senha:" ></h:outputText>
+			<h:inputSecret value="#{clienteControl.senha}"></h:inputSecret>
 			<h:commandButton actionListener="#{clienteControl.autenticar}" value="Entrar"></h:commandButton>
 			<h:commandButton action="formularioCliente" value="Fazer Cadastro" />
 		</h:panelGrid>
@@ -32,21 +31,21 @@
 				<h:panelGrid columns="2">
 					<h:outputText value="Nome"/>
 					<h:outputText value="#{clienteControl.cliente.nome}" />
-					<h:outputText value="Email" styleClass="rotulos"/>
+					<h:outputText value="Email"/>
 					<h:outputText value="#{clienteControl.cliente.email}"/>
-					<h:outputText value="Logradouro" styleClass="rotulos"/>
+					<h:outputText value="Logradouro" />
 					<h:outputText value="#{clienteControl.cliente.cep.logradouro}" />
-					<h:outputText value="Bairro" styleClass="rotulos"/>
+					<h:outputText value="Bairro" />
 					<h:outputText value="#{clienteControl.cliente.cep.bairro}" />
-					<h:outputText value="Municipio" styleClass="rotulos"/>
+					<h:outputText value="Municipio" />
 					<h:outputText value="#{clienteControl.cliente.cep.municipio.descricao}"/>
-					<h:commandButton actionListener="#{pedidoControl.confirmarCompra}" value="Confirmar Compra" styleClass="botoes" />
-					<h:commandButton action="formularioCliente" value="Alterar Dados" styleClass="botoes"/>
+					<h:commandButton actionListener="#{pedidoControl.confirmarCompra}" value="Confirmar Compra"/>
+					<h:commandButton action="formularioCliente" value="Alterar Dados" />
 				</h:panelGrid>
 				<h:commandButton actionListener="#{clienteControl.logout}" value="Sair" styleClass="botoes"></h:commandButton>
 			</rich:panel>
 		</h:panelGroup>
-	</div>
+
 	</h:form>
 </f:view>
 </body>

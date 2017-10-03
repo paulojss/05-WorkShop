@@ -46,7 +46,7 @@ public class PedidoControl {
 		}
 	}
 	
-	public void excluirProdutosCarrinho ( ActionEvent evento ) {
+	public void excluirProdutoCarrinho ( ActionEvent evento ) {
 		ItemPedido item = ( ItemPedido ) itens.getRowData();
 		pedido.removerItem(item);
 	}

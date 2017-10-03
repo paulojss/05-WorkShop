@@ -1,8 +1,7 @@
 package br.com.workshop.controle;
 
-import java.awt.event.ActionEvent;
-
 import javax.faces.context.FacesContext;
+import javax.faces.event.ActionEvent;
 import javax.servlet.http.HttpServletRequest;
 
 import br.com.workshop.modelo.Cep;
@@ -76,6 +75,14 @@ public class ClienteControl {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	public String getCepString() {

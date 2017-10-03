@@ -7,4 +7,5 @@ public class PedidoDao extends Persistencia<Pedido> {
 	public PedidoDao () {
 		super (Pedido.class);
 	}
+	
 }

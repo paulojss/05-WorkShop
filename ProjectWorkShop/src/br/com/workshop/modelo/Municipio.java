@@ -6,13 +6,14 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 @Entity
 public class Municipio {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, 
-		generator = "geradorMunicipio" )
+	@SequenceGenerator(name="geradorMunicipio", allocationSize=1, initialValue=1, sequenceName="gerador_municipio")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE,  generator = "geradorMunicipio" )
 	private Integer id = 0;
 	private String descricao;
 	@Enumerated(EnumType.STRING)
